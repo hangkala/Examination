@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isPrime(x) {
+        let dem = 0;
+        for (let i = 1; i <= x; i++){
+            if (x % i === 0){
+                dem = dem + 1;
+            }
+        }
+        return (dem === 2) ? console.log('true') : console.log('false');
+    }
+    isPrime(12);
+</script>
+</body>
+</html>
